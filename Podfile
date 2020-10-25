@@ -6,14 +6,7 @@ target 'BitbucketRepo' do
   use_frameworks!
 
   # Pods for BitbucketRepo
-
-  target 'BitbucketRepoTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'BitbucketRepoUITests' do
-    # Pods for testing
-  end
+  pod 'Alamofire', '~> 5.2'
+  pod 'Kingfisher', '~> 5.0'
 
 end
