@@ -156,6 +156,21 @@
             </objects>
             <point key="canvasLocation" x="982.60869565217399" y="37.5"/>
         </scene>
+        <!--Repository Detail View Controller-->
+        <scene sceneID="SvJ-HO-y07">
+            <objects>
+                <viewController storyboardIdentifier="RepositoryDetailViewController" id="3dm-sc-YCm" customClass="RepositoryDetailViewController" customModule="BitbucketRepo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iwu-VD-sHH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="VIf-1V-nSh"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pVI-FR-cF9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1882" y="54"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="xUe-pI-jNM">
             <objects>

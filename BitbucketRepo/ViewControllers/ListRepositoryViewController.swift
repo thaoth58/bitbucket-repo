@@ -87,5 +87,10 @@ extension ListRepositoryViewController: UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        guard let detailVC = storyboard?.instantiateViewController(identifier: Constants.ViewControllerIdentifier.repositoryDetail) as? RepositoryDetailViewController else { return }
+        
+        detailVC.repository = repositories[indexPath.row]
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }

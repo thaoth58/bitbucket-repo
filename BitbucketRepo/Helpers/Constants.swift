@@ -12,4 +12,8 @@ struct Constants {
     struct Image {
         static let defaultAvatar = UIImage(named: "default-avatar")
     }
+    
+    struct ViewControllerIdentifier {
+        static let repositoryDetail = "RepositoryDetailViewController"
+    }
 }
