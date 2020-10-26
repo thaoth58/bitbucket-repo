@@ -22,6 +22,9 @@
 		ACA787B72545A9A30080CCBF /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA787B62545A9A30080CCBF /* Owner.swift */; };
 		ACCD9DC22545AE95004A274D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9DC12545AE95004A274D /* Utils.swift */; };
 		ACCD9DC72545B61F004A274D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9DC62545B61F004A274D /* Constants.swift */; };
+		ACCD9DCD25465477004A274D /* success-response.json in Resources */ = {isa = PBXBuildFile; fileRef = ACCD9DCC25465477004A274D /* success-response.json */; };
+		ACCD9DD52546566F004A274D /* empty-response.json in Resources */ = {isa = PBXBuildFile; fileRef = ACCD9DD42546566F004A274D /* empty-response.json */; };
+		ACCD9DDD25465784004A274D /* wrong-type-response.json in Resources */ = {isa = PBXBuildFile; fileRef = ACCD9DDC25465784004A274D /* wrong-type-response.json */; };
 		B963237DF1EB32B3FEA3E3FB /* Pods_BitbucketRepo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2DA79F8871C17A6198A9F6 /* Pods_BitbucketRepo.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,9 @@
 		ACA787B62545A9A30080CCBF /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		ACCD9DC12545AE95004A274D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		ACCD9DC62545B61F004A274D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ACCD9DCC25465477004A274D /* success-response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "success-response.json"; sourceTree = "<group>"; };
+		ACCD9DD42546566F004A274D /* empty-response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "empty-response.json"; sourceTree = "<group>"; };
+		ACCD9DDC25465784004A274D /* wrong-type-response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wrong-type-response.json"; sourceTree = "<group>"; };
 		CCD000790C246E58E5792E17 /* Pods-BitbucketRepo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitbucketRepo.debug.xcconfig"; path = "Target Support Files/Pods-BitbucketRepo/Pods-BitbucketRepo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,6 +150,7 @@
 		AC55C7E2254571EB0080D3E4 /* BitbucketRepoTests */ = {
 			isa = PBXGroup;
 			children = (
+				ACCD9DCB2546541A004A274D /* Resources */,
 				AC55C7E3254571EB0080D3E4 /* BitbucketRepoTests.swift */,
 				AC55C7E5254571EB0080D3E4 /* Info.plist */,
 			);
@@ -202,6 +209,16 @@
 				ACCD9DC62545B61F004A274D /* Constants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		ACCD9DCB2546541A004A274D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ACCD9DDC25465784004A274D /* wrong-type-response.json */,
+				ACCD9DD42546566F004A274D /* empty-response.json */,
+				ACCD9DCC25465477004A274D /* success-response.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		E4B4B0F54977A6D3EA5B5E5C /* Pods */ = {
@@ -328,6 +345,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACCD9DDD25465784004A274D /* wrong-type-response.json in Resources */,
+				ACCD9DD52546566F004A274D /* empty-response.json in Resources */,
+				ACCD9DCD25465477004A274D /* success-response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

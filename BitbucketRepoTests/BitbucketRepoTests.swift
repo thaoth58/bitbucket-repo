@@ -17,17 +17,46 @@ class BitbucketRepoTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    private func getDataFrom(fileName name: String) -> Data? {
+        if let path = Bundle(for: type(of: self)).path(forResource: name, ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path))
+                return data
+            } catch {
+            }
+        }
+        return nil
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    // success-reponse contains 10 repositories
+    func testParseFromData_Success() {
+        if let successData = getDataFrom(fileName: "success-response") {
+            let repositoryResponse = RepositoryResponse.parse(from: successData)
+            XCTAssertNotNil(repositoryResponse)
+            XCTAssertEqual(repositoryResponse?.repositories.count, 10)
+            XCTAssertNotNil(repositoryResponse?.next)
+        } else {
+            XCTFail("Cannot get success data")
         }
     }
-
+    
+    func testParseFromData_Fail_EmptyReponse() {
+        if let successData = getDataFrom(fileName: "empty-response") {
+            let repositoryResponse = RepositoryResponse.parse(from: successData)
+            XCTAssertNil(repositoryResponse)
+        } else {
+            XCTFail("Cannot get empty data")
+        }
+    }
+    
+    // type of values in response is not array, make sure that repositoryReponse is nil
+    func testParseFromData_Fail_WrongTypeReponse() {
+        if let successData = getDataFrom(fileName: "wrong-type-response") {
+            let repositoryResponse = RepositoryResponse.parse(from: successData)
+            XCTAssertNil(repositoryResponse)
+        } else {
+            XCTFail("Cannot get empty data")
+        }
+    }
 }
