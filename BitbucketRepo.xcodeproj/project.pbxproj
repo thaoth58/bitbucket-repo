@@ -26,6 +26,7 @@
 		ACCD9DD52546566F004A274D /* empty-response.json in Resources */ = {isa = PBXBuildFile; fileRef = ACCD9DD42546566F004A274D /* empty-response.json */; };
 		ACCD9DDD25465784004A274D /* wrong-type-response.json in Resources */ = {isa = PBXBuildFile; fileRef = ACCD9DDC25465784004A274D /* wrong-type-response.json */; };
 		ACCD9DE5254660F6004A274D /* RepositoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9DE4254660F6004A274D /* RepositoryDetailViewController.swift */; };
+		ACCD9DF025466FC1004A274D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9DEF25466FC1004A274D /* WebViewController.swift */; };
 		B963237DF1EB32B3FEA3E3FB /* Pods_BitbucketRepo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2DA79F8871C17A6198A9F6 /* Pods_BitbucketRepo.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		ACCD9DD42546566F004A274D /* empty-response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "empty-response.json"; sourceTree = "<group>"; };
 		ACCD9DDC25465784004A274D /* wrong-type-response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wrong-type-response.json"; sourceTree = "<group>"; };
 		ACCD9DE4254660F6004A274D /* RepositoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailViewController.swift; sourceTree = "<group>"; };
+		ACCD9DEF25466FC1004A274D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		CCD000790C246E58E5792E17 /* Pods-BitbucketRepo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitbucketRepo.debug.xcconfig"; path = "Target Support Files/Pods-BitbucketRepo/Pods-BitbucketRepo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +176,7 @@
 				AC55C83825458A1D0080D3E4 /* RepositoryCell */,
 				AC55C81E254584E80080D3E4 /* ListRepositoryViewController.swift */,
 				ACCD9DE4254660F6004A274D /* RepositoryDetailViewController.swift */,
+				ACCD9DEF25466FC1004A274D /* WebViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				AC55C7CF254571E80080D3E4 /* SceneDelegate.swift in Sources */,
 				AC55C8302545868C0080D3E4 /* Repository.swift in Sources */,
 				ACCD9DC72545B61F004A274D /* Constants.swift in Sources */,
+				ACCD9DF025466FC1004A274D /* WebViewController.swift in Sources */,
 				AC55C83A25458A3C0080D3E4 /* RepositoryCell.swift in Sources */,
 				AC55C82B254585600080D3E4 /* RepositoryResponse.swift in Sources */,
 				AC55C81F254584E80080D3E4 /* ListRepositoryViewController.swift in Sources */,

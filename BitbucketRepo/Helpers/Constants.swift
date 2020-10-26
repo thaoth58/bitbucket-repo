@@ -15,5 +15,6 @@ struct Constants {
     
     struct ViewControllerIdentifier {
         static let repositoryDetail = "RepositoryDetailViewController"
+        static let webview = "WebViewController"
     }
 }

@@ -17,4 +17,11 @@ extension String {
         }
         return self
     }
+    
+    func displayText() -> String {
+        if !self.isEmpty {
+            return self
+        }
+        return "N/A"
+    }
 }

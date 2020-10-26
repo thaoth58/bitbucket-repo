@@ -12,11 +12,15 @@ class Repository: NSObject, Codable {
     var type: String?
     var createdDate: String?
     var owner: Owner?
+    var website: String?
+    var language: String?
     
     private enum CodingKeys: String, CodingKey {
         case name
         case type
         case createdDate = "created_on"
         case owner
+        case website
+        case language
     }
 }
